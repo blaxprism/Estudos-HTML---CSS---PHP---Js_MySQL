@@ -5,7 +5,7 @@
 	<p>Pode ser que Tenham arquivos com práticas ruins, gambiarras, feios e tudo de ruim, porém exibindo que estou estudando algum tópico em cada um deles, salvando como está indo meu desenvolvimento com o tempo, não refletindo exatamente como são meus códigos, mas sim feitos para que eu aprenda algo com eles</p>
 	<p>Caso queira ver como são meus projetos, olhe em outros repositórios, esses são feitos sem documentar ou se preocupar em estarem completamente funcionais e sem bugs</p>
 	<h2>Códigos neste repositório:</h2>
-	<ol>
+	<ol type="I">
 		<li>Blocos</li>
 		<p>Detalha o uso de blocos como div, header, footer, etc.</p>
 		<li>Decidir</li>
