@@ -1,0 +1,256 @@
+/*
+. = class
+# = id
+*/
+
+html{
+	background: rgb(74,157,255);
+	background: linear-gradient(270deg, rgba(74,157,255,1) 0%, rgba(151,197,251,1) 100%);
+	font-family: arial,lucida sans,calibri;
+	font-weight: 12px;
+}
+
+hr{
+	border-color: rgb(74,157,255);
+	border-style: solid;
+}
+
+hr.menor{
+	width: 350px; 
+	margin-left: 0;
+	border-color: red;
+	border-style: dashed;
+}
+
+input{
+	border-color: black;
+	border-style: solid;
+	padding: 3px;
+}
+
+fieldset{
+	border-color: black;
+	border-style: solid;
+	padding: 3px;
+}
+
+select{
+	border-color: black;
+	border-style: solid;
+	padding: 3px;
+}
+
+textarea{
+	border-color: black;
+	border-style: solid;
+	padding: 3px;
+}
+
+pre{
+	font-family: arial,lucida sans,calibri;
+	font-weight: bold;
+}
+
+#title{
+
+}
+
+#parforms{
+
+}
+
+#forms1{
+
+}
+
+#basic{
+
+}
+
+#textbasic{
+	font-weight: bold;
+}
+
+#formbasic{
+
+}
+
+#limit{
+
+}
+
+#textlimit{
+	font-weight: bold;
+}
+
+#formlimit{
+
+}
+
+#password{
+
+}
+
+#textpassword{
+	font-weight: bold;
+}
+
+#formpassword{
+
+} 
+
+#number{
+
+}
+
+#textnumber{
+	font-weight: bold;
+}
+
+#formnumber{
+
+} 
+
+#radio{
+
+}
+
+#textradio{
+	font-weight: bold;
+}
+
+#formradio{
+
+} 
+
+#check{
+
+}
+
+#textcheck{
+	font-weight: bold;
+}
+
+#formcheck{
+
+} 
+
+#hidden{
+
+}
+
+#texthidden{
+	font-weight: bold;
+}
+
+#formhidden{
+	font-weight: bold;
+} 
+
+#button{
+
+}
+
+#textbutton{
+	font-weight: bold;
+}
+
+#formbutton{
+
+} 
+
+#file{
+
+}
+
+#textfile{
+	font-weight: bold;
+}
+
+#formfile{
+
+} 
+
+#fieldset{
+
+}
+
+#textfieldset{
+	font-weight: bold;
+}
+
+#formfieldset{
+
+} 
+
+#select{
+
+}
+
+#textselect{
+	font-weight: bold;
+}
+
+#formselect{
+
+} 
+
+#multiple{
+
+}
+
+#textmultiple{
+	font-weight: bold;
+}
+
+#formmultiple{
+
+} 
+
+#text{
+
+}
+
+#texttext{
+	font-weight: bold;
+}
+
+#formtext{
+
+} 
+
+#image{
+
+}
+
+#textimage{
+	font-weight: bold;
+}
+
+#formimage{
+
+} 
+
+#submit{
+
+}
+
+#textsubmit{
+	font-weight: bold;
+}
+
+#formsubmit{
+
+} 
+
+#reset{
+
+}
+
+#textreset{
+	font-weight: bold;
+}
+
+#formreset{
+
+} 

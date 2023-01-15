@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/forms.css"/>
+		<link rel="icon" href="imagens/logo.png"/>
+		<title>Formulários</title>
+		<!--script em javascript que faz aparecer algo na tela como um alerta-->
+		<script type="text/javascript">
+			function msg() {
+				alert("🎆Você apertou o botão🎆");
+
+			}
+		</script>
+	</head>
+	<body>
+		<hr/>
+		<div id="title">
+			<center>				
+				<h1>
+					<u>
+						Formulários
+					</u>
+				</h1>
+			</center>
+		</div>
+		<hr/>
+		<div id="parforms">
+			<pre>Para iniciar um formulário é necessário usar a tag < form ><hr class="menor"/><b><u>Parâmetros de formulários</u><hr class="menor"/>name=""  = da um nome para o formulário<hr class="menor"/>Action="" = para onde vão ir as informações desse formulário, caso fique em branco vai ir para esse mesmo arquivo<br/>exemplo: action="forms.php" = manda para o arquivo forms.php<hr class="menor"/>method="" = método de envio do formulário<br/>{<br/>	method="get": envia informações através da url<br/>	method="post": envia informações para o arquivo sem aparecer na url<br/>}</pre>
+		</div>
+		<hr/>
+		<div id="forms1">
+			<form name="teste" action="forms.php" method="post" id="form">
+				<!--permite que texto seja digitado-->
+				<div id="basic">
+					<div id="textbasic">
+						< label for="id do input" > <br/>cria um texto conectado a um formulário, clicar no texto direciona o usuário até o formulário<br/>
+						<hr class="menor"/>
+						< input type="text" name="" id=""/ ><br/>
+						Permite que textos sejam digitados, é uma caixa de inserção de texto genérica
+						<hr class="menor"/>
+					</div>
+
+					<div id="formbasic">
+						<h3>
+							<label for="texto">Digite um texto:</label><br/>
+							<input type="text" name="texto" id="texto"/>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--permite um número limitado de carácteres serem digitados-->
+				<div id="limit">
+					<div id="textlimit">
+						< input type="text" maxlength="máximo de caracteres"/ >
+						<hr class="menor"/>
+						é um formulário basico com limite de caracteres a ser digitado
+						<hr class="menor"/>
+					</div>
+					<div id="formlimit">
+						<h3>
+							<label for="max">Digite até 8 carácteres:</label><br/>
+							<input type="text" name="max" id="max" maxlength="8"/><br/>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--permite que texto seja escrito mas vai ficar escondido-->
+				<div id="password">
+					<div id="textpassword">
+						< input type="password" name="" id="" / >
+						<hr class="menor"/>
+						Formulário com espaço para que senhas possam ser digitadas
+						<hr class="menor"/>
+					</div>
+					<div id="formpassword">
+						<h3>
+							<label for="senha">Digite um texto a ser escondido:</label><br/>
+							<input type="password" name="senha" id="senha"/><br/>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+					<!-- permite a inserção de números (html5)-->
+				<div id="number">
+					<div id="textnumber">
+						< input type="number" name="" id=""/ >
+						<hr class="menor"/>
+						Formulário que permite a inserção de números
+						<hr class="menor"/>
+					</div>
+					<div id="formnumber">	
+						<h3>
+							<label for="num">Digite um número</label><br/>
+							<input type="number" name="num" id="num"/>
+						<h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--permite a criação alternativas (sem multipla escolha)-->
+				<div id="radio">
+					<div id="textradio">
+						< input type="radio" value="" name="" id="" />
+						<hr class="menor"/>
+						Formulário de questões, onde somente uma pode ser selecionada<br/>
+						Para isso deve ser utilizada cada questão com um value e id, porém o name deve ser igual
+						<hr class="menor"/>
+					</div>
+					<div id="formradio">
+						<h3>
+							Escolha única:<br/>
+							<label for="A">A</label>
+							<input type="radio" value="1" name="pergunta" id="A"/><br/>
+							<label for="B">B</label>
+							<input type="radio" value="2" name="pergunta" id="B"/><br/>
+							<label for="C">C</label>
+							<input type="radio" value="3" name="pergunta" id="C"/><br/>
+							<label for="D">D</label>
+							<input type="radio" value="4" name="pergunta" id="D"/><br/>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--permite a criação alternativas (com multipla escolha)-->
+				<!--usar o radio nesse caso é menos otimizado, bem melhor usar assim-->
+				<div id="check">
+					<div id="textcheck">
+						< input type="checkbox" value="" name="" id="" />
+						<hr class="menor"/>
+						cria um formulário com a opção de checkbox, <br/>
+						permitindo que várias questões sejam assinaladas, <br/>
+						todas as opções deves ter o mesmo name
+						<hr class="menor"/>
+					</div>
+					<div id="formcheck">
+						<h3>
+							Multipla escolha:<br/>
+							<label for="1">A</label>
+							<input type="checkbox" value="1" name="opc[]" id="1"/><br/>
+							<label for="2">B</label>
+							<input type="checkbox" value="2" name="opc[]" id="2"/><br/>
+							<label for="3">C</label>
+							<input type="checkbox" value="3" name="opc[]" id="3"/><br/>
+							<label for="4">D</label>
+							<input type="checkbox" value="4" name="opc[]" id="4"/><br/>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--insere uma informação que não é vísivel no site(envia um dado em back end)-->
+				<div id="hidden">
+					<div id="texthidden">
+						< input type="hidden" name="" value="" id="" />
+						<hr class="menor"/>
+						envia um dado que não é visivel pelo usuário, somente pelo código
+						<hr class="menor"/>
+					</div>
+					<div id="formhidden">
+						<label for="back">↓ Dado escondido no back end ↓</label><br/>
+						<input type="hidden" name="escondido" value="564" id="back"/><br/>↑<br/>
+						<hr/>
+					</div>
+				</div>
+
+				<!--botão-->
+				<div id="button">
+					<div id="textbutton">
+						< input type="button" name="" id="" value="" />
+						<hr class="menor"/>
+						cria um botão, que pode ser utilizado por javascript para ter alguma função
+						<hr class="menor"/>
+					</div>
+					<div id="formbutton">
+						<h3>
+							<label for="aperta">Aperta</label><br/>
+							<input type="button" name="aperta" id="aperta" value="Aperta" onclick="msg();"/>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--Envia arquivo-->
+				<div id="file">
+					<div id="textfile">
+						< input type="file" id="arquivo" />
+						<hr class="menor"/>
+						Cria um local que permite que arquivos sejam enviados
+						<hr class="menor"/>
+					</div>
+					<div id="formfile">
+						<h3>
+							<label for="arquivo">Enviar arquivo</label><br/>
+							<input type="file" name="arquivo" id="arquivo"/>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!-- faz um formulário com uma caixinha e uma legenda-->
+				<div id="fieldset">
+					<div id="textfieldset">
+						< fieldset > 
+						<hr class="menor"/>
+						Cria um formulário bonitinho
+						<hr class="menor"/>
+						< legend >
+						<hr class="menor"/>
+						Cria uma legenda, deve estar dentro do fieldset
+						<hr class="menor"/>
+					</div>
+					<div id="formfieldset">
+						<h3>
+							<fieldset>
+								<legend>Legenda</legend>
+								<label for="algo">Digite algo:</label> <br/>
+								<input type="text" name="algo" id="algo"/><br/>
+							</fieldset>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!-- faz um formulário que permite opções diferentes dentro de uma caixa-->
+				<div id="select">
+					<div id="textselect">
+						< select > 
+						<hr class="menor"/>
+						cria uma caixa com opções
+						<hr class="menor"/>
+						< option >
+						<hr class="menor"/>
+						marca a opção, cada opção é marcada por uma tag option
+						<hr class="menor"/>
+					</div>
+					<div id="formselect">
+						<h3>
+							<fieldset>
+								<legend>Texto</legend>
+								<label for="casado">Estado civil: </label>
+								<select id="casado" name="casado">
+									<option>Escolha uma opção</option>
+									<option>Solteiro</option>
+									<option>Namorando</option>
+									<option>Casado</option>
+									<option>Divorciado</option>
+									<option>Víuvo</option>
+									<option>Triste</option>
+								</select>
+							</fieldset>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--permite que várias opções sejam selecionadas-->
+				<div id="multiple">
+					<div id="textmultiple">
+						< select multiple >
+						<hr class="menor"/>
+						Permite a criação de um select onde multiplas opções podem ser selecionadas
+						<hr class="menor"/>
+						< optgroup label="">
+						<hr class="menor"/>
+						Permite a criação de uma label que separa um grupo de opções dentro dela
+						<hr class="menor"/>
+						< option disabled="1">
+						<hr class="menor"/>
+						Cria uma opção desabilitada
+						<hr class="menor"/>
+					</div>
+					<div id="formmultiple">
+						<h3>
+							<fieldset>
+								<legend>lorem ipsum</legend>
+								<label for="lorem">dolor sit</label> <br/>
+								<select id="lorem" name="lorem" multiple size="11">
+									<option disabled="1">Selecione uma ou mais opções</option>
+									<option disabled="1">(Segure ctrl para selecionar mais de uma ou segure e arraste)</option>
+									
+									<optgroup label="lorem ipsum">
+										<option>amet,</option>
+										<option>consectetur</option>
+										<option>adipiscing</option>
+										<option>elit.</option>
+									</optgroup>
+									<optgroup label="dolor sit amet,">
+										<option>In et vestibulum</option>
+										<option>nisi.</option>
+										<option>Duis vel</option>
+									</optgroup>
+								</select>
+							</fieldset>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--cria uma área onde um texto pode ser digitado-->
+				<div id="text">
+					<div id="texttext">
+						< textarea ><br/>
+						parâmetro rows = quantidade de linhas <br/>
+						parâmetro cols = quantidade de colunas
+						<hr class="menor"/>
+						Cria uma área onde texto pode ser inserido<br/>
+						para colocar um texto padrão basta colocar entre a tag de abertura e fechamento
+						<hr class="menor"/>
+					</div>
+					<div id="formtext">
+						<h3>
+							<fieldset>
+								<legend>Lorem ipsum</legend>
+								<label for="digita">Digite algo:</label><br/>
+								<!--rows=linhas cols=colunas-->
+								<center>
+									<textarea name="digita" id="digita" rows="10" cols="100">Digite um texto...
+									</textarea>
+								</center>
+							</fieldset>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--envia todos os dados mas o botão é uma imagem e salva em que parte dela eu cliquei-->
+				<div id="image">
+					<div id="textimage">
+						< input type="image" src="" alt="" id="" />
+						<hr class="menor"/>
+						Cria um botão de envio com uma imagem, esse botão envia todos os dados do formulário
+						<hr class="menor"/>
+					</div>
+					<div id="formimage">
+						<h3>
+							<label for="imagem">Enviar todos os dados inseridos</label><br/><br/>
+							<input type="image" src="imagens/enviar.png" alt="enviar" height="150" id="imagem"/>
+						</h3>
+					</div>
+				</div>
+				<hr/>
+
+				<!--enviar todos os dados-->
+				<div id="submit">
+					<div id="textsubmit">
+						< input type="submit" value="" />
+						<hr class="menor"/>
+						Cria um botão que envia todos os dados do formulário
+						<hr class="menor"/>
+					</div>
+					<div id="formsubmit">
+						<input type="submit" value="Enviar todos os dados inseridos"/>
+					</div>
+				</div>
+				<hr/>
+				
+				<!--apagar todos os dados-->
+				<div id="reset">
+					<div id="textreset">
+						< input type="reset" value="apagar todos os dados inseridos" />
+						<hr class="menor"/>
+						Cria um botão que apaga todos os dados do formulário
+						<hr class="menor"/>
+					</div>
+					<div id="formreset">
+						<input type="reset" value="apagar todos os dados inseridos"/>
+					</div>
+				</div>
+				<hr/>
+			</form>
+		</div>
+	</body>
+</html>
