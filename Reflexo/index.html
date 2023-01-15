@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Espelhos</title>
+		<link rel="icon" href="espelho.png"/>
+		<style type="text/css">
+			body{
+				font-family: verdana;
+				background: rgb(168,153,142);
+				background: linear-gradient(90deg, rgba(168,153,142,1) 0%, rgba(173,155,142,1) 25%, rgba(175,153,139,1) 100%);
+				color: black;
+				font-weight: bolder;
+			}
+			hr{
+				border-color: black;
+			}
+			fieldset{
+				border-color: black;
+				border-radius: 10px;
+			}
+			pre{
+				font-family: verdana;
+				color: black;
+				display: flex;
+				align-items: center;
+				margin: auto;
+				line-height: 1.5;
+			}
+			input{
+				border-style: ridge;
+				border-color: black;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="post" action="inserir.php"> 
+			<fieldset>
+				<legend>Qual a incógnita da conta?</legend>
+				<pre><input type="radio" value="1" name="tipo" id="A" required/><label for="A">Distância focal		(f)</label></pre>
+				<pre><input type="radio" value="2" name="tipo" id="B"/><label for="B">Posição do objeto		(p)</label></pre>
+				<pre><input type="radio" value="3" name="tipo" id="C"/><label for="C">Posição da imagem	(p')</label></pre>
+				<hr color="#2e0f00"/>
+				<input type="submit" value="enviar" name="enviar" />
+			</fieldset>
+		</form>
+	</body>
+</html>

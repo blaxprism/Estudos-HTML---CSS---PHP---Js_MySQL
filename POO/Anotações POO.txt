@@ -1,0 +1,16 @@
+explicação orientação a objetos:
+
+Classe: 
+	tabela do banco de dados
+atributos/propriedades:
+	colunas do banco de dados
+métodos:
+	funções que utilizem as colunas do banco de dados
+	ex. somar()
+Objeto: 
+	Linha do banco de dados
+Classe abstrata:
+	Classes-pai que não podem ser classes filhas
+Classes finais:
+	Classes-filhas que não podem ser classes-pai
+

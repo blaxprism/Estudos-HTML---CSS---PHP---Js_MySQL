@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Tabelas</title>
+	</head>
+	<body BGCOLOR="black">
+		<!-- <TABLE BORDER="X">ABRE A CRIAÇÃO DA TABELA-->
+		<!-- BORDERCOLOR="X" COR DA BORDA-->
+		<!--THEAD: INDICA O INÍCIO E O FIM DO CABEÇALHO DA TABELA-->
+		<!--TBODY: INDICA O INÍCIO E O FIM DO CORPO DA TABELA-->
+		<!-- CELLSPACING="X" ESPAÇO ENTRE AS CÉLULAS-->
+		<!-- CELLPADDING="X" ESPAÇO DENTRO DA CÉLULA-->
+		<!-- BGCOLOR="X" COR DO FUNDO DA CÉLULA-->
+		<!-- WIDTH="X" LARGURA DA CÉLULA-->
+		<!-- HEIGHT="X" ALTURA DA LINHA-->
+		<!-- RULES="X" QUAIS LINHAS MOSTRAR-->
+		<!-- OPÇÕES DE RULES = ALL-TODAS, NONE-NENHUMA,
+		ROWS-SOMENTE LINHAS, COLS-SOMENTE COLUNAS-->
+		<!-- <TR> INICIA UMA NOVA LINHA-->
+		<!-- <TD> INICIA UMA NOVA CÉLULA
+		DENTRO DA LINHA-->
+		<!-- <TD COLSPAN="X"> MESCLA COLUNAS-->
+		<!-- <TD ROWSPAN="X"> MESCLA LINHAS-->
+		<!-- <TH> CONTEÚDO EM FORMA DE CABEÇALHO -->
+		<font FACE="arial" color="white">
+			<hr color="MidnightBlue"/>
+			<h1>Tabelas</h1>
+			<p>
+				<hr color="MidnightBlue"/>
+				< table ><br/>< tr ><br/>< td ><br/>< /td ><br/>< /tr ><br/>< /table >
+				<hr color="MidnightBlue"/>
+				<FONT FACE="arial" color="black">
+					<table BORDERCOLOR="#334142" rules="all" border="7" bgcolor="#EBEBFF"> <!-- cria uma tabela --> 
+						<tr> <!-- cria uma linha --> 
+							<td> <!-- cria uma nova coluna -->
+								linha 1 coluna 1
+							</td>
+							<td> <!-- cria uma nova coluna -->
+								linha 1 coluna 2
+							</td>
+							<td> <!-- cria uma nova coluna -->
+								linha 1 coluna 3
+							</td>
+						</tr> 
+						<tr> <!-- cria uma linha --> 
+							<td> <!-- cria uma nova coluna -->
+								linha 2 coluna 1
+							</td>
+							<td> <!-- cria uma nova coluna -->
+								linha 2 coluna 2
+							</td>
+							<td> <!-- cria uma nova coluna -->
+								linha 2 coluna 3
+							</td>
+						</tr> 
+						<tr> <!-- cria uma linha --> 
+							<td> <!-- cria uma nova coluna -->
+								linha 3 coluna 1
+							</td>
+							<td> <!-- cria uma nova coluna -->
+								linha 3 coluna 2
+							</td>
+							<td> <!-- cria uma nova coluna -->
+								linha 3 coluna 3
+							</td>
+						</tr> 
+					</table>
+				</FONT>
+
+				<hr color="MidnightBlue"/>
+				< table ><br/>< tr ><br/>< th ><br/>< /th ><br/>< /tr ><br/>< /table >
+				<hr color="MidnightBlue"/>
+				<FONT FACE="arial" color="black">
+					<table rules="all" BORDERCOLOR="#334142" rules="all" border="7" bgcolor="#EBEBFF"> <!-- cria uma tabela --> 
+						<tr> <!-- cria uma linha --> 
+							<th> <!-- cria uma nova coluna -->
+								linha 1 coluna 1
+							</th>
+							<th> <!-- cria uma nova coluna -->
+								linha 1 coluna 2
+							</th>
+							<th> <!-- cria uma nova coluna -->
+								linha 1 coluna 3
+							</th>
+						</tr> 
+						<tr> <!-- cria uma linha --> 
+							<th> <!-- cria uma nova coluna -->
+								linha 2 coluna 1
+							</th>
+							<th> <!-- cria uma nova coluna -->
+								linha 2 coluna 2
+							</th>
+							<th> <!-- cria uma nova coluna -->
+								linha 2 coluna 3
+							</th>
+						</tr> 
+						<tr> <!-- cria uma linha --> 
+							<th> <!-- cria uma nova coluna -->
+								linha 3 coluna 1
+							</th>
+							<th> <!-- cria uma nova coluna -->
+								linha 3 coluna 2
+							</th>
+							<th> <!-- cria uma nova coluna -->
+								linha 3 coluna 3
+							</th>
+						</tr> 	
+					</table>
+				</FONT>
+
+				<hr color="MidnightBlue"/>
+				tabela na tabela<br/><br/>
+				< table ><br/>< tr ><br/>< td ><br/><br/>< table ><br/>< tr ><br/>< td ><br/>< /td ><br/>< /tr ><br/>< /table ><br/><br/>< /td ><br/>< /tr ><br/>< /table >
+				<hr color="MidnightBlue"/>
+				<FONT FACE="arial" color="black">
+					<table rules="all" BORDERCOLOR="#334142" rules="all" border="7" bgcolor="#EBEBFF">
+						<tr>
+							<th>
+								tabela 
+								<tr>
+									<th>
+										<center>
+										<table border="5" bgcolor="#EBEBFF">
+											<th>
+												na
+											</th>
+										</table></center>
+									</th>
+								</tr>	
+							</th>
+						</tr>
+						<tr>
+							<th>
+								tabela
+							</th>
+						</tr>
+					</table>
+				</FONT>
+			</p>
+<!-- =============================================================================================================== -->
+			<hr/>exemplos de tabelas:<hr/>
+			<font face="arial" color="black">
+				<table BORDERCOLOR="#334142" rules="all" border="5" bgcolor="#EBEBFF" CELLPADDING="3">
+					<caption style="background-color: purple; color: black; font-weight: bolder; border-style: solid; border-color: blue; border-width: 2px;">Legenda</caption> <!--cria uma legenda para a tabela-->
+					<thead>
+						<tr>
+							<th colspan="2">
+								<center>
+									cellC
+								</center>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="2"> <!--colspan="x" mescla linhas -->
+								<center>
+									<img src="https://static-cdn.jtvnw.net/emoticons/v1/305380142/3.0">
+								</center>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								lorem ipsum
+							</td>
+							<td>
+								dolor sit
+							</td>
+						</tr>
+						<tr>
+							<td>
+								amet,consectetur
+							</td>
+							<td>
+								adipiscing elit.
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2">
+								<center>
+									Descrição
+								</center>
+							</th>
+						</tr>
+						<tr>
+							<td colspan="2" WIDTH="1"> 
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat dictum sem et laoreet. Nulla pellentesque accumsan odio, at varius est luctus et. Etiam quis nisi in nisi pulvinar bibendum. Vestibulum tempor nec nisi ut facilisis. Donec tempor bibendum elementum. Nulla nec sapien commodo, consectetur enim sed, dictum est. Morbi convallis luctus velit, sed volutpat augue. Donec at odio at ligula sodales facilisis. Curabitur nec dui elementum diam dictum mattis dictum sed tellus. Nunc suscipit blandit fringilla. Curabitur in erat hendrerit, semper tortor in, rhoncus nunc. Phasellus dictum pellentesque massa sollicitudin accumsan.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</font>
+		</font>
+	</body>
+</html>
